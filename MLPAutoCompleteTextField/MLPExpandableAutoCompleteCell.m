@@ -14,13 +14,16 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.theAutoCompleteField.autoCompleteDataSource = self;
     self.theAutoCompleteField.autoCompleteDelegate = self;
     self.theAutoCompleteField.maximumEditDistance = 0;
     self.theAutoCompleteField.maximumNumberOfAutoCompleteRows = MAX_AUTO_ROWS;
     self.theAutoCompleteField.autoCompleteTableBorderColor = [UIColor blueColor];
     self.theAutoCompleteField.autoCompleteTableBorderWidth = 1;
     
+}
+
+- (void) setDataSource:(id<MLPAutoCompleteTextFieldDataSource>)dataSource{
+    self.theAutoCompleteField.autoCompleteDataSource = dataSource;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -17,7 +17,7 @@
 
 @end
 
-@interface MLPExpandableAutoCompleteCell : UITableViewCell<MLPAutoCompleteTextFieldDataSource, MLPAutoCompleteTextFieldDelegate>
+@interface MLPExpandableAutoCompleteCell : UITableViewCell<MLPAutoCompleteTextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet MLPAutoCompleteTextField *theAutoCompleteField;
 @property (strong, nonatomic) id<MLPExpandableAutoComplete> expandDelegate;

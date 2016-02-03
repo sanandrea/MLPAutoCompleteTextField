@@ -51,6 +51,7 @@
     self.expandableIndexPath = indexPath;
     [self.tableView beginUpdates];
     [self.tableView endUpdates];
+    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 - (void) collapseTableViewCell:(UITableViewCell*) cell{
     self.expandableIndexPath = nil;
