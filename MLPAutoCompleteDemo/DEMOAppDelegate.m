@@ -9,6 +9,8 @@
 #import "DEMOAppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
 #import "DEMOViewController.h"
+#import "DEMOTableViewController.h"
+#define TABLE_TEST 1
 
 @implementation DEMOAppDelegate
 
@@ -16,7 +18,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+#ifndef TABLE_TEST
     self.viewController = [[DEMOViewController alloc] initWithNibName:@"View" bundle:[NSBundle mainBundle]];
+#else
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Table" bundle:nil];
+    self.viewController = [sb instantiateViewControllerWithIdentifier:@"mainTableView"];
+#endif
+
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     //[self customizeAppearance];

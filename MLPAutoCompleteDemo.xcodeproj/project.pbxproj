@@ -529,6 +529,10 @@
 		85FF058D16B0874E009A94EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FF056816B0874D009A94EE /* Foundation.framework */; };
 		85FF059516B0874E009A94EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85FF059316B0874E009A94EE /* InfoPlist.strings */; };
 		85FF059816B0874E009A94EE /* MLPAutoCompleteDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FF059716B0874E009A94EE /* MLPAutoCompleteDemoTests.m */; };
+		A98015E11C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A98015E01C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.m */; };
+		A98015E41C624CE000A2AFEC /* MLPExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98015E31C624CE000A2AFEC /* MLPExpandableTableViewController.m */; };
+		A98015E71C62504900A2AFEC /* DEMOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98015E61C62504900A2AFEC /* DEMOTableViewController.m */; };
+		A98015E91C6251A600A2AFEC /* Table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98015E81C6251A600A2AFEC /* Table.storyboard */; };
 		ED1B0C3D1AA618FF00343F6D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1B0C3C1AA618FE00343F6D /* libGoogleAnalyticsServices.a */; };
 		ED1B0C3F1AA6194B00343F6D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1B0C3E1AA6194B00343F6D /* libz.dylib */; };
 /* End PBXBuildFile section */
@@ -1080,17 +1084,14 @@
 		85FF059416B0874E009A94EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85FF059616B0874E009A94EE /* MLPAutoCompleteDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteDemoTests.h; sourceTree = "<group>"; };
 		85FF059716B0874E009A94EE /* MLPAutoCompleteDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLPAutoCompleteDemoTests.m; sourceTree = "<group>"; };
+		A98015DF1C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLPExpandableAutoCompleteCell.h; path = MLPAutoCompleteTextField/MLPExpandableAutoCompleteCell.h; sourceTree = SOURCE_ROOT; };
+		A98015E01C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLPExpandableAutoCompleteCell.m; path = MLPAutoCompleteTextField/MLPExpandableAutoCompleteCell.m; sourceTree = SOURCE_ROOT; };
+		A98015E21C624CE000A2AFEC /* MLPExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLPExpandableTableViewController.h; path = MLPAutoCompleteTextField/MLPExpandableTableViewController.h; sourceTree = SOURCE_ROOT; };
+		A98015E31C624CE000A2AFEC /* MLPExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLPExpandableTableViewController.m; path = MLPAutoCompleteTextField/MLPExpandableTableViewController.m; sourceTree = SOURCE_ROOT; };
+		A98015E51C62504900A2AFEC /* DEMOTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOTableViewController.h; sourceTree = "<group>"; };
+		A98015E61C62504900A2AFEC /* DEMOTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOTableViewController.m; sourceTree = "<group>"; };
+		A98015E81C6251A600A2AFEC /* Table.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Table.storyboard; sourceTree = "<group>"; };
 		BC31C639174877BE0044B2A5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		ED1B0C321AA618FE00343F6D /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		ED1B0C331AA618FE00343F6D /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		ED1B0C341AA618FE00343F6D /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
-		ED1B0C351AA618FE00343F6D /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
-		ED1B0C361AA618FE00343F6D /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
-		ED1B0C371AA618FE00343F6D /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		ED1B0C381AA618FE00343F6D /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		ED1B0C391AA618FE00343F6D /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		ED1B0C3A1AA618FE00343F6D /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		ED1B0C3B1AA618FE00343F6D /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		ED1B0C3C1AA618FE00343F6D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		ED1B0C3E1AA6194B00343F6D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -1685,6 +1686,8 @@
 				856E78571721E18B00932197 /* DEMOCustomAutoCompleteObject.m */,
 				8559144816C1C2B7007F88DE /* DEMOCustomAutoCompleteCell.h */,
 				8559144916C1C2B7007F88DE /* DEMOCustomAutoCompleteCell.m */,
+				A98015E51C62504900A2AFEC /* DEMOTableViewController.h */,
+				A98015E61C62504900A2AFEC /* DEMOTableViewController.m */,
 				85FF056D16B0874D009A94EE /* Supporting Files */,
 			);
 			path = MLPAutoCompleteDemo;
@@ -1702,6 +1705,7 @@
 				85FF057216B0874D009A94EE /* main.m */,
 				85FF057416B0874D009A94EE /* MLPAutoCompleteDemo-Prefix.pch */,
 				85AC584416B2004400CD60D5 /* View.xib */,
+				A98015E81C6251A600A2AFEC /* Table.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1735,6 +1739,10 @@
 				856E78551721A2A200932197 /* MLPAutoCompletionObject.h */,
 				85EB411416C3488D000C193E /* NSString+Levenshtein.h */,
 				85EB411516C3488D000C193E /* NSString+Levenshtein.m */,
+				A98015DF1C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.h */,
+				A98015E01C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.m */,
+				A98015E21C624CE000A2AFEC /* MLPExpandableTableViewController.h */,
+				A98015E31C624CE000A2AFEC /* MLPExpandableTableViewController.m */,
 			);
 			name = MLPAutoCompleteTextField;
 			sourceTree = "<group>";
@@ -2113,6 +2121,7 @@
 				8559137616C19452007F88DE /* Somaliland.png in Resources */,
 				8559137716C19452007F88DE /* South-Africa.png in Resources */,
 				8559137816C19452007F88DE /* South-Georgia-and-the-South-Sandwich-Islands.png in Resources */,
+				A98015E91C6251A600A2AFEC /* Table.storyboard in Resources */,
 				8559137916C19452007F88DE /* South-Korea.png in Resources */,
 				8559137A16C19452007F88DE /* South-Ossetia.png in Resources */,
 				8559137B16C19452007F88DE /* South-Sudan.png in Resources */,
@@ -2337,10 +2346,13 @@
 				85FF057716B0874D009A94EE /* DEMOAppDelegate.m in Sources */,
 				85FF058016B0874D009A94EE /* DEMOViewController.m in Sources */,
 				64AAFDD619361B30004EB079 /* DEMODataSource.m in Sources */,
+				A98015E71C62504900A2AFEC /* DEMOTableViewController.m in Sources */,
 				8559144A16C1C2B8007F88DE /* DEMOCustomAutoCompleteCell.m in Sources */,
+				A98015E41C624CE000A2AFEC /* MLPExpandableTableViewController.m in Sources */,
 				85EB411616C3488D000C193E /* MLPAutoCompleteTextField.m in Sources */,
 				85EB411716C3488D000C193E /* NSString+Levenshtein.m in Sources */,
 				856E78581721E18B00932197 /* DEMOCustomAutoCompleteObject.m in Sources */,
+				A98015E11C6248FF00A2AFEC /* MLPExpandableAutoCompleteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2439,7 +2451,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MLPAutoCompleteDemo/MLPAutoCompleteDemo-Prefix.pch";
 				INFOPLIST_FILE = "MLPAutoCompleteDemo/MLPAutoCompleteDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MLPAutoCompleteDemo",
@@ -2456,7 +2468,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MLPAutoCompleteDemo/MLPAutoCompleteDemo-Prefix.pch";
 				INFOPLIST_FILE = "MLPAutoCompleteDemo/MLPAutoCompleteDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MLPAutoCompleteDemo",
